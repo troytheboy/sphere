@@ -5,7 +5,6 @@ const clockArray = ["12am", "1230am", "1am", "130am", "2am", "230am", "3am",
     "430pm", "5pm", "530pm", "6pm", "630pm", "7pm", "730pm", "8pm", "830pm",
     "9pm", "930pm", "10pm", "1030pm", "11pm", "1130pm", "12am"];
   let day;
-  let clickedTime;
 
 // when a checkbox is clicked
 $('.checkbox').click(function(){
@@ -15,7 +14,6 @@ $('.checkbox').click(function(){
       let startDateTime = this.childNodes[1].id;
       // and show the time select menu
       displayMenu(startDateTime);
-      clickedTime = startDateTime;
     }
 });
 
