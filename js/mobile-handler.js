@@ -1,7 +1,7 @@
 // when a checkbox is clicked
 $('.checkbox').click(function(){
     // Only mobile devices
-    if ($(window).width() < 769) {
+    if ($(window).width() < 769 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       // Store input's id as a variable
       let startDateTime = this.childNodes[1].id;
       // and show the time select menu
